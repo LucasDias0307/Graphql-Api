@@ -23,6 +23,17 @@ module.exports = {
 
             return await db('aluno').where({ra: input.ra}).first()
         },
+        async updateAluno (_, {input})
+        {
+            const resultado = await db('aluno').update({
+                nome: input.nome,
+                curso: input.curso,
+                semestre: input.semestre,
+                cidade: input.cidade
+            }).where({ra: input.ra})
+
+            return await db('aluno').where({ra: input.ra}).first()
+        },
         async deleteAluno(_, { ra }) {
             const resultado = await db('aluno').del().where({ra})
             return resultado;

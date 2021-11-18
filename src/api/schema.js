@@ -27,6 +27,7 @@ const typeDefs = `
 
     type Mutation {
         createAluno(input: AlunoInput): Aluno
+        updateAluno(input: AlunoInput): Aluno
         deleteAluno(ra: String): Boolean
     }
 `
