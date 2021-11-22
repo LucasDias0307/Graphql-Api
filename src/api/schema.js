@@ -3,32 +3,32 @@ const { makeExecutableSchema } = require('graphql-tools')
 
 const typeDefs = `
     type Aluno {
-        ra: String
-        cpf: String
+        ra: Int
+        cpf: Float
         nome: String
         curso: String
-        semestre: String
+        semestre: Int
         cidade: String
     }
 
     type Query {
-        getAluno(ra: String!): Aluno
+        getAluno(ra: Int!): Aluno
         getAlunos: [Aluno]
     }
 
     input AlunoInput {
-        ra: String!
-        cpf: String!
+        ra: Int!
+        cpf: Float!
         nome: String!
         curso: String!
-        semestre: String!
+        semestre: Int!
         cidade: String!
     }
 
     type Mutation {
         createAluno(input: AlunoInput): Aluno
         updateAluno(input: AlunoInput): Aluno
-        deleteAluno(ra: String): Boolean
+        deleteAluno(ra: Int): Boolean
     }
 `
 module.exports = makeExecutableSchema({typeDefs, resolvers})
