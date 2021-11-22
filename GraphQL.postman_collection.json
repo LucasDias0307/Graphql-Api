@@ -13,7 +13,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation{\r\n  createAluno(input: {\r\n    ra: \"581380\"\r\n    cpf: \"32538477808\"\r\n    nome: \"Lucas Felipe\"\r\n    curso: \"Ciências da Computação\"\r\n    semestre: \"8\"\r\n    cidade: \"Garça\"\r\n  }){\r\n    ra\r\n    cpf\r\n    nome\r\n  }\r\n}",
+						"query": "mutation{\r\n  createAluno(input: {\r\n    ra: 581380\r\n    cpf: 32538477808\r\n    nome: \"Lucas Felipe\"\r\n    curso: \"Ciências da Computação\"\r\n    semestre: 8\r\n    cidade: \"Garça\"\r\n  }){\r\n    ra\r\n    cpf\r\n    nome\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
@@ -63,7 +63,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "{\r\n    getAluno(ra: \"581380\")\r\n    {\r\n        ra\r\n        nome\r\n        cpf\r\n        curso\r\n    }\r\n}",
+						"query": "{\r\n    getAluno(ra: 581380)\r\n    {\r\n        ra\r\n        nome\r\n        cpf\r\n        curso\r\n    }\r\n}",
 						"variables": ""
 					}
 				},
@@ -88,7 +88,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation{\r\n  updateAluno(input: {\r\n    ra: \"581380\"\r\n    cpf: \"32538477808\"\r\n    nome: \"Lucas Felipe de Oliveira Dias\"\r\n    curso: \"Ciências da Computação\"\r\n    semestre: \"8\"\r\n    cidade: \"Garça\"\r\n  }){\r\n    ra\r\n    cpf\r\n    nome\r\n    curso\r\n    semestre\r\n    cidade\r\n  }\r\n}",
+						"query": "mutation{\r\n  updateAluno(input: {\r\n    ra: 581380\r\n    cpf: 32538477808\r\n    nome: \"Lucas Felipe de Oliveira Dias\"\r\n    curso: \"Ciências da Computação\"\r\n    semestre: 8\r\n    cidade: \"Garça\"\r\n  }){\r\n    ra\r\n    cpf\r\n    nome\r\n    curso\r\n    semestre\r\n    cidade\r\n  }\r\n}",
 						"variables": ""
 					}
 				},
@@ -113,7 +113,7 @@
 				"body": {
 					"mode": "graphql",
 					"graphql": {
-						"query": "mutation{\r\n  deleteAluno(ra: \"581380\")\r\n}",
+						"query": "mutation{\r\n  deleteAluno(ra: 581380)\r\n}",
 						"variables": ""
 					}
 				},
