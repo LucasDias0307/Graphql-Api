@@ -13,8 +13,8 @@
  - Base de dados no MySql chamada graphql;
  - Tabela criada, script abaixo:
 	CREATE TABLE `aluno` (
- 	 `ra` INT NOT NULL,
-  	`cpf` INT NOT NULL,
+  	`ra` INT NOT NULL,
+  	`cpf` BIGINT NOT NULL,
   	`nome` varchar(150) NOT NULL,
   	`curso` varchar(100) NOT NULL,
   	`semestre` int NOT NULL,
